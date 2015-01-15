@@ -12,3 +12,10 @@ This library can be used to verify that a GeoTIFF is a HappyTIFF.
         // { x: 91, y: 50, z: 7 }
     });
 
+### Source data
+
+The test images in `test/fixtures` are open data from:
+
+    91-50-7.valid.tif   landsat 8 composite, USGS (http://www.usgs.gov)
+    invalid.tif         flanders composite, AGIV (https://www.agiv.be)
+

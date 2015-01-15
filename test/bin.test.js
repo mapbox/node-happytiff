@@ -27,3 +27,11 @@ tape('validates', function(assert) {
     });
 });
 
+tape('invalid', function(assert) {
+    execFile(binPath, [__dirname + '/fixtures/invalid.tif'], function(err, stdout, stderr) {
+        assert.equal(err.code, 1);
+        assert.equal(/Error: Extent coord 0 differs from nearest tile \(11\/1040\/684\)/.test(stderr), true);
+        assert.end();
+    });
+});
+

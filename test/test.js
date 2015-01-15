@@ -39,3 +39,11 @@ tape('info', function(assert) {
     });
 });
 
+tape('info invalid', function(assert) {
+    happytiff.info(__dirname + '/fixtures/invalid.tif', function(err, info) {
+        assert.ok(err);
+        assert.equal(/Error: Extent coord 0 differs from nearest tile \(11\/1040\/684\)/.test(err.toString()), true);
+        assert.end();
+    });
+});
+
