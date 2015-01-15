@@ -8,8 +8,13 @@ This library can be used to verify that a GeoTIFF is a HappyTIFF.
 
 `happytiff` CLI command:
 
-    $ sudo npm install -g happytiff
-    $ happytiff test/fixtures/91-50-7.valid.tif
+    Usage: happytiff <filepath>
+
+    # install happytiff
+    sudo npm install -g happytiff
+
+    # example run against a tif file
+    happytiff test/fixtures/91-50-7.valid.tif
     {
       "z": 7,
       "x": 91,
