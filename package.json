@@ -1,0 +1,20 @@
+{
+  "name": "happytiff",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "Mapbox (https://www.mapbox.com)",
+  "dependencies": {
+    "mapnik-omnivore": "2.2.x",
+    "sphericalmercator": "1.0.x"
+  },
+  "engines": {
+    "node": "0.10.x"
+  },
+  "devDependencies": {
+    "tape": "3.0.x"
+  },
+  "scripts": {
+    "test": "tape test/*.js"
+  }
+}
