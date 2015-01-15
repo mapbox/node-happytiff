@@ -1,7 +1,7 @@
 var execFile = require('child_process').execFile;
 var tape = require('tape');
 var path = require('path');
-var binPath = path.resolve('../bin/happytiff');
+var binPath = path.resolve(__dirname + '/../bin/happytiff');
 
 tape('usage', function(assert) {
     execFile(binPath, function(err, stdout, stderr) {
