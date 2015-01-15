@@ -6,6 +6,18 @@ A *HappyTIFF* is a [GeoTIFF](http://en.wikipedia.org/wiki/GeoTIFF) with extents 
 
 This library can be used to verify that a GeoTIFF is a HappyTIFF.
 
+`happytiff` CLI command:
+
+    $ sudo npm install -g happytiff
+    $ happytiff test/fixtures/91-50-7.valid.tif
+    {
+      "z": 7,
+      "x": 91,
+      "y": 50
+    }
+
+JS API:
+
     var happytiff = require('happytiff');
     var filepath = __dirname + '/test/fixtures/91-50-7.valid.tif';
 
