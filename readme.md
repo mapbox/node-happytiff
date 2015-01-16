@@ -1,5 +1,7 @@
 ![travis](https://travis-ci.org/mapbox/node-happytiff.svg?branch=master)
 
+![happytiff](https://cloud.githubusercontent.com/assets/83384/5769985/4b3b8264-9cf1-11e4-81ce-3fed6d277acf.gif)
+
 HappyTIFF
 ---------
 A *HappyTIFF* is a [GeoTIFF](http://en.wikipedia.org/wiki/GeoTIFF) with extents that match exactly those of a web mercator ZXY tile.
