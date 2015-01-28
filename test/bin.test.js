@@ -13,7 +13,7 @@ tape('usage', function(assert) {
 
 tape('proxies err', function(assert) {
     execFile(binPath, ['/does/not/exist.tif'], function(err, stdout, stderr) {
-        assert.equal(err.code, 1);
+        assert.equal(err.code, 3);
         assert.equal(stderr, 'Error: Error getting stats from file. File might not exist.\n');
         assert.end();
     });
@@ -29,7 +29,7 @@ tape('validates', function(assert) {
 
 tape('invalid', function(assert) {
     execFile(binPath, [__dirname + '/fixtures/invalid.tif'], function(err, stdout, stderr) {
-        assert.equal(err.code, 1);
+        assert.equal(err.code, 3);
         assert.equal(/Error: Extent coord 0 differs from nearest tile \(11\/1040\/684\)/.test(stderr), true);
         assert.end();
     });
