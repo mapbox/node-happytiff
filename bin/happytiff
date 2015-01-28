@@ -11,7 +11,7 @@ if (!process.argv[2]) {
 happytiff.info(path.resolve(process.argv[2]), function(err, info) {
     if (err) {
         console.warn(err.toString());
-        process.exit(1);
+        process.exit(3);
     }
     console.log(JSON.stringify(info, null, 2));
 });
