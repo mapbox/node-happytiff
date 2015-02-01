@@ -2,17 +2,26 @@
 
 var happytiff = require('../index.js');
 var path = require('path');
+var argv = require('minimist')(process.argv, {
+    boolean: 'json'
+});
 
-if (!process.argv[2]) {
-    console.log('Usage: happytiff <filepath>');
+if (argv._.length < 3) {
+    console.log('Usage:     happytiff [options] <filepath>');
+    console.log('Options:');
+    console.log('--format=[json|zxy]  Output format. Default: json');
     process.exit(1);
 }
 
-happytiff.info(path.resolve(process.argv[2]), function(err, info) {
+happytiff.info(path.resolve(argv._[2]), function(err, info) {
     if (err) {
         console.warn(err.toString());
         process.exit(1);
     }
-    console.log(JSON.stringify(info, null, 2));
+    if (argv.format === 'zxy') {
+        console.log('%d/%d/%d', info.z, info.x, info.y);
+    } else {
+        console.log(JSON.stringify(info, null, 2));
+    }
 });
 
