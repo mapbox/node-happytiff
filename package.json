@@ -1,11 +1,11 @@
 {
   "name": "happytiff",
   "version": "0.2.0",
-  "description": "",
+  "description": "Utility to detect/verify happytiffs",
   "main": "index.js",
   "author": "Mapbox (https://www.mapbox.com)",
   "dependencies": {
-    "mapnik-omnivore": "4.1.x",
+    "mapnik-omnivore": "5.0.x",
     "minimist": "1.1.x",
     "sphericalmercator": "1.0.x"
   },

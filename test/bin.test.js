@@ -14,7 +14,7 @@ tape('usage', function(assert) {
 tape('proxies err', function(assert) {
     execFile(binPath, ['/does/not/exist.tif'], function(err, stdout, stderr) {
         assert.equal(err.code, 3);
-        assert.equal(stderr, 'Error: Error getting stats from file. File might not exist.\n');
+        assert.equal(stderr, 'Error: ENOENT, open \'/does/not/exist.tif\'\n');
         assert.end();
     });
 });
