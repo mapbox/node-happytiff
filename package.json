@@ -4,6 +4,7 @@
   "description": "Utility to detect/verify happytiffs",
   "main": "index.js",
   "author": "Mapbox (https://www.mapbox.com)",
+  "repository": "https://github.com/mapbox/node-happytiff.git",
   "dependencies": {
     "mapnik-omnivore": "~6.1.0",
     "minimist": "1.1.x",
