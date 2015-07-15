@@ -5,7 +5,7 @@
   "main": "index.js",
   "author": "Mapbox (https://www.mapbox.com)",
   "dependencies": {
-    "mapnik-omnivore": "git://github.com/mapbox/mapnik-omnivore.git#mapnik-3.4.0",
+    "mapnik-omnivore": "~6.2.0",
     "minimist": "1.1.x",
     "sphericalmercator": "1.0.x"
   },
