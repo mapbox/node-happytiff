@@ -1,5 +1,6 @@
-var omnivore = require('mapnik-omnivore');
+var Raster = require('mapnik-omnivore/lib/raster');
 var util = require('util');
+var fs = require('fs');
 var sm = new (require('sphericalmercator'))();
 var EXTENT = 20037508.342789244;
 
@@ -12,11 +13,22 @@ module.exports.nearestZoom = nearestZoom;
 // - verifies that it's a happytiff
 // - returns pertinent happytiff info (its z,x,y cover)
 function info(filepath, callback) {
-    omnivore.digest(filepath, afterDigest);
-    function afterDigest(err, info) {
+    fs.stat(filepath, afterStat);
+
+    function afterStat(err, stat) {
+        if (err) return callback(err);
+        try {
+            var ds = new Raster(filepath);
+        } catch(err) {
+            return callback(err);
+        }
+        ds.getExtent(afterExtent);
+    }
+
+    function afterExtent(err, extent) {
         if (err) return callback(err);
         var zxy;
-        try { zxy = fromExtent(info.extent); }
+        try { zxy = fromExtent(extent); }
         catch(err) { return callback(err); }
         return callback(null, zxy);
     }
