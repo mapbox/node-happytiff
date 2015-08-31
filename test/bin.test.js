@@ -14,7 +14,7 @@ tape('usage', function(assert) {
 tape('proxies err', function(assert) {
     execFile(binPath, ['/does/not/exist.tif'], function(err, stdout, stderr) {
         assert.equal(err.code, 3);
-        assert.equal(stderr, 'Error: ENOENT, open \'/does/not/exist.tif\'\n');
+        assert.equal(stderr, 'Error: ENOENT, stat \'/does/not/exist.tif\'\n');
         assert.end();
     });
 });
