@@ -1,3 +1,7 @@
+# 0.7.0
+
+- Upgrade to mapnik-omnivore 8.1.0
+
 # 0.6.0
 
 - Upgraded to mapnik-omnivore 8.0.0
