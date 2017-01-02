@@ -1,5 +1,5 @@
 {
-  "name": "happytiff",
+  "name": "@mapbox/happytiff",
   "version": "0.7.0",
   "description": "Utility to detect/verify happytiffs",
   "main": "index.js",
