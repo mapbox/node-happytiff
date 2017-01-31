@@ -1,4 +1,4 @@
-var omnivore = require('mapnik-omnivore');
+var omnivore = require('@mapbox/mapnik-omnivore');
 var util = require('util');
 var sm = new (require('sphericalmercator'))();
 var EXTENT = 20037508.342789244;
