@@ -13,7 +13,7 @@ This library can be used to verify that a GeoTIFF is a HappyTIFF.
     Usage: happytiff <filepath>
 
     # install happytiff
-    sudo npm install -g happytiff
+    sudo npm install -g @mapbox/happytiff
 
     # example run against a tif file
     happytiff test/fixtures/91-50-7.valid.tif
@@ -25,7 +25,7 @@ This library can be used to verify that a GeoTIFF is a HappyTIFF.
 
 JS API:
 
-    var happytiff = require('happytiff');
+    var happytiff = require('@mapbox/happytiff');
     var filepath = __dirname + '/test/fixtures/91-50-7.valid.tif';
 
     happytiff.info(function(filepath, function(err, info) {
