@@ -6,7 +6,7 @@
   "author": "Mapbox (https://www.mapbox.com)",
   "repository": "https://github.com/mapbox/node-happytiff.git",
   "dependencies": {
-    "@mapbox/mapnik-omnivore": "https://mapbox-npm.s3.amazonaws.com/package/mapbox-mapnik-omnivore-8.2.0-1-gc34415f-a7ab28e2ef380ee77f219149cb44f6fb1705571a.tgz",
+    "@mapbox/mapnik-omnivore": "~8.2.0",
     "minimist": "1.1.x",
     "sphericalmercator": "1.0.x"
   },
