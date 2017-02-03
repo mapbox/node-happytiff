@@ -1,6 +1,6 @@
 {
   "name": "@mapbox/happytiff",
-  "version": "0.7.0",
+  "version": "0.7.1",
   "description": "Utility to detect/verify happytiffs",
   "main": "index.js",
   "author": "Mapbox (https://www.mapbox.com)",
