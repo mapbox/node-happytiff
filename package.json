@@ -6,9 +6,9 @@
   "author": "Mapbox (https://www.mapbox.com)",
   "repository": "https://github.com/mapbox/node-happytiff.git",
   "dependencies": {
-    "@mapbox/mapnik-omnivore": "~8.2.0",
+    "@mapbox/mapnik-omnivore": "https://github.com/mapbox/mapnik-omnivore/tarball/8.3.0",
     "minimist": "1.1.x",
-    "sphericalmercator": "1.0.x"
+    "@mapbox/sphericalmercator": "1.0.x"
   },
   "devDependencies": {
     "tape": "3.0.x"

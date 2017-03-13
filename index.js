@@ -1,6 +1,6 @@
 var omnivore = require('@mapbox/mapnik-omnivore');
+var sm = new (require('@mapbox/sphericalmercator'))();
 var util = require('util');
-var sm = new (require('sphericalmercator'))();
 var EXTENT = 20037508.342789244;
 
 module.exports = {};
@@ -71,4 +71,3 @@ function nearestZoom(num) {
     }
     return Math.max(0,z-1);
 }
-
