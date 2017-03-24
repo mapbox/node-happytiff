@@ -1,4 +1,9 @@
 
+# 0.8.0
+
+- Upgrade to mapnik-omnivore 8.3.0
+- Update to @mapbox/sphericalmercator 
+
 # 0.7.1
 
 - Upgrade to mapnik-omnivore 8.2.0
