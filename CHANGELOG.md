@@ -1,3 +1,6 @@
+# 0.9.0
+
+- Upgrade to mapnik-omnivore 8.4.0, per mapnik@3.6.0 update
 
 # 0.8.0
 
