@@ -1,3 +1,8 @@
+# 1.0.0
+
+- Upgrade to mapnik-omnivore@9.0.0
+- Drops windows support
+
 # 0.10.0
 
 - Upgrade to mapnik-omnivore@8.5.0
