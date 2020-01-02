@@ -1,3 +1,7 @@
+# 1.1.0
+
+- Upgrade to mapnik-omnivore@9.1.1
+
 # 1.0.0
 
 - Upgrade to mapnik-omnivore@9.0.0
