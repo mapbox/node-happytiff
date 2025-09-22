@@ -1,3 +1,6 @@
+⚠️ This repository is no longer actively maintained by Mapbox.
+
+##
 [![travis](https://travis-ci.com/mapbox/node-happytiff.svg?branch=master)](https://travis-ci.com/mapbox/node-happytiff)
 
 ![happytiff](https://cloud.githubusercontent.com/assets/83384/5769985/4b3b8264-9cf1-11e4-81ce-3fed6d277acf.gif)
